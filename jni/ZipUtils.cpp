@@ -15,14 +15,14 @@
 extern "C" {
 #endif
 
-#define NDK_FUNC(f) Java_com_hu_p7zip_ZipUtils_##f
+#define NDK_FUNC(f) Java_com_kw_lib_p7zip_P7zipUtils_##f
 
 /*
  * Class:     com_hu_p7zip_ZipUtils
  * Method:    executeCommand
  * Signature: (Ljava/lang/String;)I
  */
-JNIEXPORT jint JNICALL NDK_FUNC(executeCommand)
+JNIEXPORT jint JNICALL NDK_FUNC(exec)
 (JNIEnv *env, jclass thiz, jstring command)
 {
 	const char* ccommand = (const char*)env->GetStringUTFChars(command, NULL);
@@ -33,7 +33,12 @@ JNIEXPORT jint JNICALL NDK_FUNC(executeCommand)
 	return ret;
 }
 
+JNIEXPORT jstring JNICALL NDK_FUNC(getVersion)
+(JNIEnv *env, jclass type) {
+    return env->NewStringUTF(getVersion());
+}
+
+
 #ifdef __cplusplus
 }
 #endif
-

@@ -23,7 +23,7 @@ extern int MY_CDECL main(
 		int numArgs, const char *args[]
 #endif
 		);
-
+#define MY_P7ZIP_VERSION_INFO "7zVersion: "MY_VERSION"\n"MY_COPYRIGHT"\nDate: "MY_DATE
 /**
  * get args from string
  */
@@ -129,6 +129,10 @@ static bool str2args(const char *s, char argv[][ARGV_LEN_MAX], int* argc) {
 	return ret;
 }
 
+const char* getVersion(){
+	return MY_P7ZIP_VERSION_INFO;
+}
+
 int executeCommand(const char* cmd) {
 	int argc = 0;
 	char temp[ARGC_MAX][ARGV_LEN_MAX] = { 0 };
@@ -145,4 +149,3 @@ int executeCommand(const char* cmd) {
 	}
 	return main(argc, (const char**) argv);
 }
-

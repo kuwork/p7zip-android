@@ -9,6 +9,7 @@
 #define JNIWRAPPER_H_
 
 #include "7zTypes.h"
+#include "7zip/MyVersion.h"
 
 EXTERN_C_BEGIN
 
@@ -33,7 +34,9 @@ EXTERN_C_BEGIN
 #define LOGE(...) do { } while(0)
 #endif
 
+const char * getVersion();
 int executeCommand(const char* cmd);
+
 
 EXTERN_C_END
 

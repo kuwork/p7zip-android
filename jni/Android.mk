@@ -1,6 +1,6 @@
 
 LOCAL_PATH := $(call my-dir)
-P7ZIP_DIR := ../p7zip_15.09/CPP
+P7ZIP_DIR := ../p7zip_16.02/CPP
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := p7zip
@@ -39,7 +39,6 @@ LOCAL_SRC_FILES := \
   $(P7ZIP_DIR)/7zip/Archive/7z/7zEncode.cpp \
   $(P7ZIP_DIR)/7zip/Archive/7z/7zExtract.cpp \
   $(P7ZIP_DIR)/7zip/Archive/7z/7zFolderInStream.cpp \
-  $(P7ZIP_DIR)/7zip/Archive/7z/7zFolderOutStream.cpp \
   $(P7ZIP_DIR)/7zip/Archive/7z/7zHandler.cpp \
   $(P7ZIP_DIR)/7zip/Archive/7z/7zHandlerOut.cpp \
   $(P7ZIP_DIR)/7zip/Archive/7z/7zHeader.cpp \
@@ -56,7 +55,6 @@ LOCAL_SRC_FILES := \
   $(P7ZIP_DIR)/7zip/Archive/Cab/CabIn.cpp \
   $(P7ZIP_DIR)/7zip/Archive/Cab/CabRegister.cpp \
   $(P7ZIP_DIR)/7zip/Archive/Common/CoderMixer2.cpp \
-  $(P7ZIP_DIR)/7zip/Archive/Common/CrossThreadProgress.cpp \
   $(P7ZIP_DIR)/7zip/Archive/Common/DummyOutStream.cpp \
   $(P7ZIP_DIR)/7zip/Archive/Common/FindSignature.cpp \
   $(P7ZIP_DIR)/7zip/Archive/Common/HandlerOut.cpp \
@@ -257,4 +255,3 @@ LOCAL_SRC_FILES := \
   ZipUtils.cpp
 
 include $(BUILD_SHARED_LIBRARY)
-
