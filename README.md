@@ -16,4 +16,11 @@ This project is for me to learn Streams, NDK, and for fun.
 - Supported common archive formats:
 - Relative Java File:[P7zipUtils.java](java/com/kw/lib/p7zip/P7zipUtils.java)
 
-  | Format | Creation | Filename Extensions | |:-------|:---------|:-----------------| | 7z | X | 7z | | BZIP2 | X | bz2 bzip2 tbz2 tbz | | GZIP | X | gz gzip tgz | | TAR | X | tar | | WIM | X | wim swm | | XZ | X | xz txz | | zip | X | zip zipx jar xpi odt ods docx xlsx epub |
+  | Format | Creation | Filename Extensions |
+  |:-------|:---------|:-----------------| 
+  | 7z | X | 7z | | BZIP2 | X | bz2 bzip2 tbz2 tbz |
+  | GZIP | X | gz gzip tgz |
+  | TAR | X | tar |
+  | WIM | X | wim swm | 
+  | XZ | X | xz txz | 
+  | zip | X | zip zipx jar xpi odt ods docx xlsx epub |
